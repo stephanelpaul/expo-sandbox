@@ -1,7 +1,8 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import { BottomSheetStackParams } from '../types/routes';
 import { TestSheetNoNavigation } from './screens/TestSheetNoNavigation';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<BottomSheetStackParams>();
 
 export function BottomSheetStack() {
     return (
